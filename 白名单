@@ -1,11 +1,8 @@
-local players = game:GetService("Players")
-
-local accounts = {0,0,0} -- Accounts IDs
-local kick_message = "You were not in the game whitelist. Sorry!" -- Your kick message
-
-players.PlayerAdded:Connect(function(player)
-	if not table.find(accounts,player.UserId) then
-		print(player.Name.." attempted to join the game but was not in the whitelist.") -- The script prints a message to indicate to others that an unauthorized player attempted to enter
-		PLAYER:Kick(kick_message) -- The players is kicked
-	end
-end)
+whitelist = {
+"proyanzeixuan",
+"名字",
+"名字"
+}
+if table.find(whitelist, game.Players.LocalPlayer.Name) then
+local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/xLRUSiKx'))()
+local Window = OrionLib:MakeWindow({Name = "bf所有强大脚本综合", HidePremium = false, SaveConfig = true,IntroText = "PEN.HUB", ConfigFolder = "GG"})
