@@ -10,7 +10,7 @@ local a=tostring(game.Players.LocalPlayer.Character);
 
 if a=="no"then
 _G.she=true
-elseif a=="no"then
+elseif a=="proyanzeixuan"then
 _G.she=true
 elseif a=="no"then
 _G.she=true
